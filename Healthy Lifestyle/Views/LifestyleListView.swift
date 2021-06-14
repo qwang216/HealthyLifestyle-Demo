@@ -28,7 +28,7 @@ class LifestyleListView: UIViewController {
             switch result {
             case .success(let data):
                 data.forEach {
-                    let vm = TopStoryCellViewModel(title: $0.title, author: $0.byline, publishDate: $0.publishedDate, abstract: $0.abstract, articleURLString: $0.url, imageURLString: $0.multimedia.first!.url)
+                    let vm = TopStoryCellViewModel(topstory: $0)
                     self?.topStoryViewModels.append(vm)
                 }
                 self?.tableview.reloadData()

@@ -22,7 +22,6 @@
 		D43B69CD2675EBE6004C6D4E /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43B69CC2675EBE6004C6D4E /* HTTPMethod.swift */; };
 		D43B69D12675EEF6004C6D4E /* DecoableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43B69D02675EEF6004C6D4E /* DecoableObject.swift */; };
 		D43B69D32676EF0B004C6D4E /* APIConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43B69D22676EF0B004C6D4E /* APIConfigurable.swift */; };
-		D43B69D52676F57C004C6D4E /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43B69D42676F57C004C6D4E /* Logger.swift */; };
 		D43B69D82676F6FC004C6D4E /* GetTopStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43B69D72676F6FC004C6D4E /* GetTopStories.swift */; };
 		D43B69DA2676F72C004C6D4E /* NYTExecutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43B69D92676F72C004C6D4E /* NYTExecutable.swift */; };
 		D43B69DF2676FD98004C6D4E /* NYTNetworkServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = D43B69DE2676FD98004C6D4E /* NYTNetworkServices.swift */; };
@@ -74,7 +73,6 @@
 		D43B69CC2675EBE6004C6D4E /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		D43B69D02675EEF6004C6D4E /* DecoableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoableObject.swift; sourceTree = "<group>"; };
 		D43B69D22676EF0B004C6D4E /* APIConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfigurable.swift; sourceTree = "<group>"; };
-		D43B69D42676F57C004C6D4E /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		D43B69D72676F6FC004C6D4E /* GetTopStories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTopStories.swift; sourceTree = "<group>"; };
 		D43B69D92676F72C004C6D4E /* NYTExecutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTExecutable.swift; sourceTree = "<group>"; };
 		D43B69DE2676FD98004C6D4E /* NYTNetworkServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTNetworkServices.swift; sourceTree = "<group>"; };
@@ -201,7 +199,6 @@
 		D43B69D62676F609004C6D4E /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				D43B69D42676F57C004C6D4E /* Logger.swift */,
 				D43B69E6267714C0004C6D4E /* UIImageView+Extension.swift */,
 			);
 			path = Utility;
@@ -220,8 +217,8 @@
 		D43B69DC2676FCAB004C6D4E /* NYT Network Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				D43B69D22676EF0B004C6D4E /* APIConfigurable.swift */,
 				D43B69D92676F72C004C6D4E /* NYTExecutable.swift */,
+				D43B69D22676EF0B004C6D4E /* APIConfigurable.swift */,
 			);
 			path = "NYT Network Protocols";
 			sourceTree = "<group>";
@@ -395,7 +392,6 @@
 				D43B69EC26771B22004C6D4E /* ImageExecutable.swift in Sources */,
 				D43B69982675458E004C6D4E /* LifestyleListView.swift in Sources */,
 				D43B69E526771296004C6D4E /* TopStoryCell.swift in Sources */,
-				D43B69D52676F57C004C6D4E /* Logger.swift in Sources */,
 				D43B69C72675EA2D004C6D4E /* ResponseMapper.swift in Sources */,
 				D43B69C4267557FE004C6D4E /* Executable.swift in Sources */,
 				D43B69942675458E004C6D4E /* AppDelegate.swift in Sources */,

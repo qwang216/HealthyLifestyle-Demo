@@ -23,8 +23,7 @@ extension NYTAPIConfigurable {
                     } else {
                         onCompletion(.failure(.apiNetworkError))
                     }
-                case .failure(let error):
-                    Logger.shared.logError(error)
+                case .failure(_):
                     onCompletion(.failure(.apiNetworkError))
                 }
             }

@@ -20,11 +20,9 @@ extension UIImageView {
         self.image = UIImage(systemName: "placeholder-image")
         let dataTask = GetImageData(absoluteURLString: url).executeRequest { [weak self] in
             indicator?.stopAnimating()
-            if case .success(let imageData) = $0 {
-                if let image = UIImage(data: imageData) {
-                    self?.image = image
-                    imageCache.setObject(image, forKey: urlString)
-                }
+            if case .success(let imageData) = $0, let image = UIImage(data: imageData) {
+                self?.image = image
+                imageCache.setObject(image, forKey: urlString)
             }
         }
         return dataTask

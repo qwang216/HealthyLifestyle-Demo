@@ -26,4 +26,13 @@ struct TopStoryCellViewModel {
         guard let validDate = date else { return "" }
         return dateFormatter.string(from: validDate)
     }
+
+    init(topstory: TopStory) {
+        self.title = topstory.title
+        self.author = topstory.byline
+        self.publishDate = topstory.publishedDate
+        self.abstract = topstory.abstract
+        self.articleURLString = topstory.url
+        self.imageURLString = topstory.multimedia.first?.url
+    }
 }
